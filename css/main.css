@@ -133,6 +133,7 @@ opacity: 100;
   border: 1px solid #ccc;
   overflow: hidden;
   overflow-y: auto;
+  transition: all 250ms ease-out;
 }
 
 .list li {
@@ -142,4 +143,9 @@ opacity: 100;
   border: 1px solid mediumpurple;
 
   color: mediumpurple;
+}
+
+.js-list {
+
+
 }

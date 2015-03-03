@@ -37,6 +37,12 @@ $circle.on('animationend', function () {
 
 
 var $btnAppend = $('.btn-append');
+var $list = $('.list');
+
+$btnAppend.on('click', function () {
+	$list.addClass('js-list');
+
+});
 
 
 
