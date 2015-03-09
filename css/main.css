@@ -40,7 +40,6 @@ div {
 
 .js-btn-show-hide {
 opacity: 100;
-
 }
 
 .diamond {
@@ -54,7 +53,6 @@ opacity: 100;
   position: absolute;
 
   transition: all 250ms ease;
-
 }
 
 .js-btn-move {
@@ -93,33 +91,27 @@ opacity: 100;
 }
 
 .js-circle-bounce {
+  -webkit-animation: circle-bounce 1s linear;
   animation: circle-bounce 1s linear;
 }
 
 
-@keyframes circle-bounce {
-  0% {
-    right: 10px;
-    top: 0px;
-  }
-  40% {
-    right: 30px;
-    top: 50px;
-  }
-  60% {
-    right: 50px;
-    top: 20px;
-  }
-
-  80% {
-    right: 70px;
-    top: 60px;
-  }
-  100% {
-    right: 90px;
-    top: 30px;
-  }
+@-webkit-keyframes circle-bounce {
+  0% { right: 10px; top: 0px; }
+  40% { right: 30px; top: 50px; }
+  60% { right: 50px; top: 20px; }
+  80% { right: 70px; top: 60px; }
+  100% { right: 90px; top: 30px; }
 }
+
+@keyframes circle-bounce {
+  0% { right: 10px; top: 0px; }
+  40% { right: 30px; top: 50px; }
+  60% { right: 50px; top: 20px; }
+  80% { right: 70px; top: 60px; }
+  100% { right: 90px; top: 30px; }
+}
+
 
 .list {
   bottom: 1em;
@@ -136,6 +128,7 @@ opacity: 100;
   transition: all 250ms ease-out;
 }
 
+
 .list li {
   padding: 0.5em;
 
@@ -143,9 +136,5 @@ opacity: 100;
   border: 1px solid mediumpurple;
 
   color: mediumpurple;
-}
-
-.js-list {
-
-
+  max-height: 6em;
 }
